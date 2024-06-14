@@ -5,8 +5,6 @@ import styles from "@/styles/Home.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Headline(props) {
-  console.log(props.title);
-  console.log(props.pagePath);
   return (
     <>
       <div className={styles.description}>
