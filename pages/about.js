@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <Headline title="About Page" pagePath="about" />
+        <Headline  pagePath="about"/>
 
         <div className={styles.center}>
           <Image
