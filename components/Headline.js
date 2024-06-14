@@ -10,7 +10,7 @@ export default function Headline(props) {
   return (
     <>
       <div className={styles.description}>
-        <h1 className={styles.title}>{props.title}</h1>
+        <h1 className={styles.title}>{props.pagePath} page</h1>
         <p>
           Get started by editing&nbsp;
           <code className={styles.code}>pages/{props.pagePath}.js</code>
