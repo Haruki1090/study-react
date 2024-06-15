@@ -20,13 +20,13 @@ export default function Home() {
         <Headline
           pagePath="index"
           code={<code className={styles.code}>pages/index.js</code>}
-          onClick={()=>alert("クリック！")}
+          onClick={()=>alert("index.jsのボタンがクリックされました!")}
         />
 
         <div className={styles.center}>
           <Image
             className={styles.logo}
-            src="/next.svg"
+            src="/next.svg"Ï
             alt="Next.js Logo"
             width={180}
             height={37}

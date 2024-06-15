@@ -24,6 +24,7 @@ export default function Home() {
           obj={{ foo: "foo", bar: "bar" }}
           bool
           code={<code className={styles.code}>pages/about.js</code>}
+          onClick={()=>alert("about.jsのボタンがクリックされました!")}
         />
 
         <div className={styles.center}>
