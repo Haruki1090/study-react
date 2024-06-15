@@ -5,12 +5,11 @@ import styles from "@/styles/Home.module.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export function Headline(props) {
-  console.log(props);
   return (
     <>
       <div className={styles.description}>
         <h1 className={styles.title}>{props.pagePath} page</h1>
-        <p>Get started by editing&nbsp;{props.children}</p>
+        <p>Get started by editing&nbsp;{props.code}</p>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
