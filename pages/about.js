@@ -23,9 +23,11 @@ export default function Home() {
           array={[1, 2, 3]}
           obj={{ foo: "foo", bar: "bar" }}
           bool
-          code={<code className={styles.code}>pages/about.js</code>}
           onClick={()=>alert("about.jsのボタンがクリックされました!")}
-        />
+        >
+          {/* childrenの定義　名前(childrenなど)はつけなくても良い（つけても良い） */}
+          <code className={styles.code}>pages/about.js</code>
+        </Headline>
 
         <div className={styles.center}>
           <Image
