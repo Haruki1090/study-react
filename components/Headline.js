@@ -10,7 +10,7 @@ export function Headline(props) {
     <>
       <div className={styles.description}>
         <h1 className={styles.title}>{props.pagePath} page</h1>
-        <p>Get started by editing&nbsp;{props.code}</p>
+        <p>Get started by editing&nbsp;{props.children}</p>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
