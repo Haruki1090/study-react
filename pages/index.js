@@ -17,7 +17,11 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <Headline pagePath="index" code={<code className={styles.code}>pages/index.js</code>} />
+        <Headline
+          pagePath="index"
+          code={<code className={styles.code}>pages/index.js</code>}
+          onClick={()=>alert("クリック！")}
+        />
 
         <div className={styles.center}>
           <Image

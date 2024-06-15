@@ -28,6 +28,8 @@ export function Headline(props) {
             />
           </a>
         </div>
+        {/* 親からonClickを渡す */}
+        <button onClick={props.onClick}>ボタン</button>
       </div>
     </>
   );
