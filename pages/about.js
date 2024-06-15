@@ -17,7 +17,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={`${styles.main} ${inter.className}`}>
-        <Headline pagePath="about" />
+        <Headline
+          pagePath="about"
+          number={1111}
+          array={[1, 2, 3]}
+          obj={{ foo: "foo", bar: "bar" }}
+          bool
+          code={<code className={styles.code}>pages/about.js</code>}
+        />
 
         <div className={styles.center}>
           <Image
