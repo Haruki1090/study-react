@@ -30,7 +30,8 @@ export function Links() {
     <div className={styles.grid}>
       {ITEMS.map((item) => (
         <a
-          key={item.href}
+        // それぞれにkeyを設定することで、Reactがそれぞれの要素を識別できるようになる。
+          key={item.href} 
           href={item.href}
           className={styles.card}
           target="_blank"
