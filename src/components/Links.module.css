@@ -6,11 +6,12 @@
 }
 
 .card {
+  margin: 3em;
+  border: #00b1b1 2px solid;
   padding: 1rem 1.2rem;
-  border-radius: var(--border-radius);
   background: rgba(var(--card-rgb), 0);
-  border: 1px solid rgba(var(--card-border-rgb), 0);
   transition: background 200ms, border 200ms;
+  text-decoration: none;
 }
 
 .card span {
@@ -35,7 +36,7 @@
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
     background: rgba(var(--card-rgb), 0.1);
-    border: 1px solid rgba(var(--card-border-rgb), 0.15);
+    border: 1px solid #ff6262;
   }
 
   .card:hover span {
