@@ -17,7 +17,15 @@ export default function Home() {
 
   // useCallbackを使うと、関数の再生成を抑えることができる
 
+  useEffect(()=>{
+    // マウント時の処理
+    document.body.style.backgroundColor = "lightblue";
 
+    // アンマウント時の処理
+    return ()=>{
+      document.body.style.backgroundColor = "";
+    }
+  },[])
 
   return (
     <>
