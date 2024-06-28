@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Main } from "src/components/Main";
 import { Header } from "src/components/Header";
 import { useCallback } from "react";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,12 +23,9 @@ export default function Home() {
       </Head>
       <Header />
 
-      <a
-        href="/about"
-        onClick={handleClick}
-      >
+      <Link href="/about" onClick={handleClick}>
         ボタンです
-      </a>
+      </Link>
 
       <Main pagePath="index" />
     </>
