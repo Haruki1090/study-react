@@ -9,15 +9,15 @@ const inter = Inter({ subsets: ["latin"] });
 export function Main(props) {
 
   // 各ページのMainコンポーネントがマウントされた時に実行される
-  useEffect(()=>{
-    // マウント時の処理
-    document.body.style.backgroundColor = "lightblue";
+  // useEffect(()=>{
+  //   // マウント時の処理
+  //   document.body.style.backgroundColor = "lightblue";
 
-    // アンマウント時の処理
-    return ()=>{
-      document.body.style.backgroundColor = "";
-    }
-  },[])
+  //   // アンマウント時の処理
+  //   return ()=>{
+  //     document.body.style.backgroundColor = "";
+  //   }
+  // },[])
 
   return (
     <>
