@@ -1,31 +1,25 @@
 import Head from "next/head";
-import { Inter } from "next/font/google";
 import { Main } from "src/components/Main";
 import { Header } from "src/components/Header";
-import { useCallback, useEffect } from "react";
-import Link from "next/link";
+import { useEffect, useState } from "react";
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  const [count, setCount] = useState(1);
 
+  const handleClick = (e) => {
+    setCount((count) => count + 1);
+  };
 
-//   const handleClick = useCallback((e) => {
-//     e.preventDefault();
-//     alert("ボタンがクリックされました");
-//   }, []);
-
-  // useCallbackを使うと、関数の再生成を抑えることができる
-
-  useEffect(()=>{
+  useEffect(() => {
     // マウント時の処理
     document.body.style.backgroundColor = "lightblue";
 
     // アンマウント時の処理
-    return ()=>{
+    return () => {
       document.body.style.backgroundColor = "";
     }
-  },[])
+  }, [])
 
   return (
     <>
@@ -33,10 +27,10 @@ export default function Home() {
         <title>Index page</title>
       </Head>
       <Header />
-
-      {/* <Link href="/about" onClick={handleClick}>
+      <h1>{count}</h1>
+      <button onClick={handleClick}>
         ボタンです
-      </Link> */}
+      </button>
 
       <Main pagePath="index" />
     </>
