@@ -23,6 +23,10 @@ export default function Home() {
     }
   }, [])
 
+  const handleClick = (e) => {
+    setCount((prevCount) => prevCount + 1);
+  };
+
   const handleInputChange = useCallback((e) => {
     if (e.target.value.length > 10) {
       alert("10文字以内で入力してください")
