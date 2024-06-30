@@ -35,7 +35,7 @@ export default function Home() {
     setText(e.target.value)
   }, [])
 
-  const handleDisplay = useCallback(() => { setIsShow((isShow) => !isShow) } , []);
+  const handleDisplay = useCallback(() => { setIsShow((prevIsShow) => !prevIsShow) }, []);
 
 
   return (
