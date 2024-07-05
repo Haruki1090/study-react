@@ -7,9 +7,9 @@ import { useBgColor } from "src/hooks/useBgColor";
 
 export default function Home() {
   const { count, isShow, handleClick, handleDisplay } = useCounter();
-  const { text, array, handleInputChange, handleAdd } = useInputArray();
+  const { text, array, handleInputChange, handleAdd } = useInputArray;
   useBgColor();
- 
+
   return (
     <>
       <Head>
@@ -26,11 +26,7 @@ export default function Home() {
         onChange={handleInputChange}
       />
       <ul>
-        {array.map((item) => {
-          return (
-            <li key={item}>{item}</li>
-          )
-        })}
+        {array ? array.map(item => <li key={item}>{item}</li>) : null}
       </ul>
       <Main pagePath="index" />
     </>
